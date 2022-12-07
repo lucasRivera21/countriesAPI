@@ -1,3 +1,7 @@
+import { countriesAPI} from "./api.js";
+countriesAPI();
+//console.log(data);
+
 const darkMode = document.querySelector('.dark-mode-btn');
 let mode = true;
 let color = document.documentElement.style;
