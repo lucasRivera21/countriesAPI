@@ -21,11 +21,11 @@
     <main class="main">
         <!--BODY TOP-->
         <section class="body-top">
-            <!--<i class="fa-solid fa-magnifying-glass"></i>--><input type="text" class="input-search" placeholder="  Search for a country...">
+            <input type="text" class="input-search" placeholder="  Search for a country...">
             <select name="select" id="select" class="select">
                 <option value="default" class="option" selected>Filter by Region</option>
                 <option value="africa" class="option">Africa</option>
-                <option value="america" class="option">America</option>
+                <option value="americas" class="option">America</option>
                 <option value="asia" class="option">Asia</option>
                 <option value="europe" class="option">Europe</option>
                 <option value="oceania" class="option">Oceania</option>
@@ -34,31 +34,14 @@
 
         <!--COUNTRIES-->
         <section class="countries">
-            <!--
-            <a class="country" href="#">
-                <picture class="flag">
-                    <img src="https://flagcdn.com/w320/fr.png" alt="">
-                </picture>
-                <h2 class="country-name">Francia</h2>
-                
-                <div class="info">
-                    <strong>Population:</strong><p>999999999</p>
-                </div>
-
-                <div class="info">
-                    <strong>Region:</strong><p>999999999</p>
-                </div>
-
-                <div class="info">
-                    <strong>Capital:</strong><p>999999999</p>
-                </div>
-                
-            </a>-->
-            
+            <div class="not-found filter"><i class="fa-solid fa-magnifying-glass"></i><p>Not Found :(</p></div>
         </section>
     </main>
 
 <!--JS-->
 <script src="/styles/js/main.js" type="module"></script>
+<script src="/styles/js/search.js"></script>
+<script src="/styles/js/filterRegion.js"></script>
+<script src="/styles/js/darkMode.js"></script>
 </body>
 </html>
