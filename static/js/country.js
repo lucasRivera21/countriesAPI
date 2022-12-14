@@ -1,6 +1,6 @@
 const countryJson = localStorage.getItem("country");
 const country = JSON.parse(countryJson);
-console.log(country.borders);
+console.log(country);
 
 function countryCreate(obj){
     const img = document.querySelector('.flag');
@@ -36,7 +36,7 @@ function countryCreate(obj){
     const borders = document.querySelector('.borders');
 
     try{
-        country.borders.forEach((element) => {
+        country.array.forEach((element) => {
             const button = document.createElement('button');
             button.textContent = element;
             button.classList.add('border-country');

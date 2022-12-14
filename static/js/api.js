@@ -15,8 +15,9 @@ const countriesAPI = async(obj) =>{
                 tld: data[i].tld,
                 currencies: data[i].currencies,
                 languages: data[i].languages,
-                borders: data[i].borders
-            }
+                borders: data[i].borders,
+                cca3: data[i].cca3
+            };
             
             //LINK
             const countries = document.querySelector('.countries');
