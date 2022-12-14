@@ -23,7 +23,7 @@ const countriesAPI = async(obj) =>{
             const a = document.createElement('a');
             a.classList.add(`${obj[i].id}`);
             a.classList.add('country');
-            //a.href = 'country.html';
+            a.href = 'country.html';
             countries.appendChild(a);
 
             //PICTURE

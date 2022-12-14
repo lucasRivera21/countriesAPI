@@ -9,7 +9,6 @@ countries.addEventListener('click', (e) => {
     var country = null;
     if(e.target.classList[0] != 'countries'){
         selected = e.target.classList[0];
-        country = JSON.stringify(obj[selected]);
-        console.log(country);
+        localStorage.setItem("country", JSON.stringify(obj[selected]));
     }
 })
